@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <style>
+        table, th, td {
+            border: 1px solid red;
+            background-color: yellow;
+        }
+        .main{
+            display: grid;
+            grid-template-areas: 
+            'head head head'
+            'side sec sec'
+            'foot foot foot'
+            ;
+        }
+        .head{
+            grid-area: head;
+            background-color: aqua;
+
+        }
+        .sec{
+            grid-area:sec;
+            padding-left:  30px;
+        }
+        .side{
+            grid-area: side;
+            padding: 10px;
+            margin:10px;
+            border-style:solid;
+            border-color:black;
+
+        }
+        .foot{
+            grid-area: foot;
+            background-color: aqua;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <img style="border-radius: 40%;float: right;padding-right: 30px;border: 3px;border-color:  red;" src="headimg.jfif" alt="error">
+            <h2 style="text-align: center;">BMI CALCULATOR</H2>
+            <H5 style="text-align: center;">Body Mass Index</H5>
+            <P style="text-align: center;text-decoration: underline;color: red;">health-fitness(Know your BMI)</P>
+        </div>
+        <div class="sec">
+            <h4><u>calculate to know your BMI</u></h4>
+            <p>Height in meters:</p>
+            <input class="height" type="text">
+            <p>Weight in kilograms:</p>
+            <P><input class="weight" type="text"><br></P>    
+            <button class="calculate"> Calculate</button>
+            <h3 class="result"></h3>
+            <p class="state" style="font-style: italic;"></p>
+        </div>
+        <div class="side">
+            <h4>About this page</h4>
+            <p>The formula for <i><b>BMI:Weight/Height<sup>2</sup></b></i> </p>
+            <table class="tab">
+                <thead>
+                    <tr>
+                        <td>BMI</td>
+                        <td>Weight Status</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Below 18.5</td>
+                        <td>UnderWeight</td>
+                    </tr>
+                    <tr>
+                        <td>18.5 – 24.9</td>
+                        <td>Normal</td>
+                        
+
+                    </tr>
+                    <tr>
+                        <td>25.0 – 29.9</td>
+                        <td>OverWeight</td>
+
+                    </tr>
+                    <tr>
+                        <td>above 30.0</td>
+                        <td>Obesity</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="foot">
+            <H3>DISCLAIMER:</H3>
+            <p>The BMI values are calculated as per your input .terms of service|copy right</p>
+            <H4 style="text-align: center;color:red;">HEALTH IS WEALTH</H4>
+        </div>
+    </div>
+    <script src="yy.js"></script>
+</body>
+</html>
